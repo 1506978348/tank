@@ -9,7 +9,8 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad() {
-
+        this.gameScript = cc.find("Canvas/BG").getComponent('game');//拿到BG节点上面挂载的game脚本
+        this.goldLabel = cc.find('Canvas/BG/gameItem/gold/goldLabel');
     },
     onBeginContact: function (contact, selfCollider, otherCollider) {
         let anim = selfCollider.node.getComponent(cc.Animation);//拿到动画组件
@@ -22,6 +23,20 @@ cc.Class({
         }else if(otherCollider.node.group == 'player'){//敌方子弹与玩家碰撞
             this.bulletDestroy(anim,selfCollider);
             /**注意玩家血量，控制玩家生命 */
+            this.gameScript.playerHp.getComponent(cc.Sprite).fillRange+=0.2;
+            if(this.gameScript.playerHp.getComponent(cc.Sprite).fillRange>=0){
+                // cc.log('死亡逻辑')
+                otherCollider.node.destroy();
+                // cc.director.pause();
+                cc.find('Canvas/gameMask/gameOver').active = true;
+                cc.find('Canvas/gameMask/gameOver/gold/goldLabel').getComponent(cc.Label).string = this.goldLabel.getComponent(cc.Label).string;
+                this.goldLabel.getComponent(cc.Label).string = 0;//游戏场景中的金币置0
+                let goldNum = cc.sys.localStorage.getItem('gold');
+                let a = Number(cc.find('Canvas/gameMask/gameOver/gold/goldLabel').getComponent(cc.Label).string)+Number(goldNum);
+                cc.sys.localStorage.setItem('gold',a);//存储金币数量
+                cc.director.pause();//游戏暂停
+            }
+
         }
     },
     /**

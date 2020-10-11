@@ -1,18 +1,18 @@
 {
   "title": "tank",
   "packageName": "",
-  "startScene": "149d5286-39fd-47ab-a255-4772ed0c5bb2",
+  "startScene": "4334205b-33d2-48b5-99a1-9edc3eb71bed",
   "excludeScenes": [],
   "includeSDKBox": false,
   "orientation": {
-    "landscapeLeft": true,
+    "landscapeLeft": false,
     "landscapeRight": true,
     "portrait": false,
     "upsideDown": false
   },
-  "webOrientation": "auto",
+  "webOrientation": "landscape",
   "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
+  "inlineSpriteFrames_native": false,
   "mergeStartScene": false,
   "optimizeHotUpdate": false,
   "md5Cache": false,
@@ -21,15 +21,24 @@
   "zipCompressJs": true,
   "fb-instant-games": {},
   "android": {
-    "packageName": "tank"
+    "REMOTE_SERVER_ROOT": "",
+    "packageName": "org.tank"
   },
   "ios": {
+    "REMOTE_SERVER_ROOT": "",
     "packageName": ""
   },
   "mac": {
-    "packageName": ""
+    "REMOTE_SERVER_ROOT": "",
+    "height": 720,
+    "packageName": "",
+    "width": 1280
   },
-  "win32": {},
+  "win32": {
+    "REMOTE_SERVER_ROOT": "",
+    "height": 720,
+    "width": 1280
+  },
   "android-instant": {
     "REMOTE_SERVER_ROOT": "",
     "host": "",
@@ -39,5 +48,8 @@
     "scheme": "https",
     "skipRecord": false
   },
-  "appBundle": false
+  "appBundle": false,
+  "mainCompressionType": "default",
+  "mainIsRemote": false,
+  "nativeMd5Cache": true
 }

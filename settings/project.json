@@ -6,7 +6,9 @@
     "bullet",
     "enemy",
     "enemyBullet",
-    "player"
+    "player",
+    "gold",
+    "skill"
   ],
   "collision-matrix": [
     [
@@ -44,15 +46,6 @@
       true,
       true,
       true,
-      null,
-      true
-    ],
-    [
-      false,
-      false,
-      true,
-      true,
-      false,
       false,
       true
     ],
@@ -60,15 +53,51 @@
       false,
       false,
       true,
+      true,
+      false,
+      false,
+      true
+    ],
+    [
+      false,
+      false,
+      true,
       false,
       true,
       true,
+      false,
+      true,
+      true
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+    ],
+    [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
       false
     ]
   ],
   "excluded-modules": [
     "3D",
-    "3D Primitive"
+    "3D Primitive",
+    "3D Physics/cannon.js",
+    "3D Physics/Builtin",
+    "3D Particle",
+    "SafeArea"
   ],
   "last-module-event-record-time": 1601903629162,
   "design-resolution-width": 960,
@@ -93,5 +122,8 @@
       "enable": false
     }
   },
-  "start-scene": "current"
+  "start-scene": "current",
+  "migrate-history": [
+    "cloud-function"
+  ]
 }

@@ -31,13 +31,10 @@
       },
       {
         "__id__": 6
-      },
-      {
-        "__id__": 7
       }
     ],
     "_prefab": {
-      "__id__": 8
+      "__id__": 7
     },
     "_opacity": 255,
     "_color": {
@@ -61,8 +58,8 @@
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
-        936.319,
-        6100.309,
+        0,
+        0,
         0,
         0,
         0,
@@ -152,7 +149,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "e7560175-3d30-4aa3-a87d-308e963dff0d"
     },
     "fileId": "beEEH0uoNAvYnTVnTn5vnH",
     "sync": false
@@ -192,57 +189,6 @@
     "_id": ""
   },
   {
-    "__type__": "cc.RigidBody",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "_type": 2,
-    "_allowSleep": true,
-    "_gravityScale": 0,
-    "_linearDamping": 0,
-    "_angularDamping": 0,
-    "_linearVelocity": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_angularVelocity": 0,
-    "_fixedRotation": true,
-    "enabledContactListener": true,
-    "bullet": true,
-    "awakeOnLoad": true,
-    "_id": ""
-  },
-  {
-    "__type__": "cc.PhysicsBoxCollider",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true,
-    "tag": 0,
-    "_density": 1,
-    "_sensor": false,
-    "_friction": 0,
-    "_restitution": 0,
-    "body": null,
-    "_offset": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_size": {
-      "__type__": "cc.Size",
-      "width": 84,
-      "height": 92
-    },
-    "_id": ""
-  },
-  {
     "__type__": "f39fcmyvMVDRYMh4no4Bf8M",
     "_name": "",
     "_objFlags": 0,
@@ -253,6 +199,29 @@
     "enemyBullet": {
       "__uuid__": "73480f59-911b-426c-9de0-e6e11be53442"
     },
+    "hp": 3,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "3b3eff99-9787-4707-8ac3-64c298ecba67"
+    },
+    "_clips": [
+      {
+        "__uuid__": "3b3eff99-9787-4707-8ac3-64c298ecba67"
+      },
+      {
+        "__uuid__": "b834e1d1-094e-4fa3-9820-d06459ad180f"
+      }
+    ],
+    "playOnLoad": false,
     "_id": ""
   },
   {
@@ -261,7 +230,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "e7560175-3d30-4aa3-a87d-308e963dff0d"
     },
     "fileId": "80gIHjYxlOQLkrKx8MvxL/",
     "sync": false

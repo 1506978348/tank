@@ -20,7 +20,6 @@ cc.Class({
 
                     let body = tiled.node.addComponent(cc.RigidBody);
                     body.type = cc.RigidBodyType.Static;
-                    // body.type = cc.RigidBodyType.Kinematic;
                     let collider = tiled.node.addComponent(cc.PhysicsBoxCollider);
                     collider.offset = cc.v2(tiledSize.width / 2, tiledSize.height / 2);
                     collider.size = tiledSize;

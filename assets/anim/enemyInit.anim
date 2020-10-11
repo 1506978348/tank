@@ -3,10 +3,10 @@
   "_name": "enemyInit",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.26666666666666666,
+  "_duration": 0.3,
   "sample": 60,
-  "speed": 0.5,
-  "wrapMode": 1,
+  "speed": 0.6,
+  "wrapMode": 0,
   "curveData": {
     "comps": {
       "cc.Sprite": {
@@ -33,6 +33,12 @@
             "frame": 0.25,
             "value": {
               "__uuid__": "f714ce76-40ef-4d65-8bd2-40242617fa84"
+            }
+          },
+          {
+            "frame": 0.2833333333333333,
+            "value": {
+              "__uuid__": "b6bf48cc-ddee-46a6-bdc2-67a93fbc5d6d"
             }
           }
         ]
